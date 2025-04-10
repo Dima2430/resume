@@ -162,7 +162,7 @@ html_content = f"""
         <h2>Front-End Developer</h2>
         <p>Remote | +380 97 7707021 | dima.volkkom@gmail.com</p>
         
-        <a href="Dmytro_Volk_Resume_Final.pdf" class="download-btn">
+        <a href="Dmytro_Volk_Resume.pdf" class="download-btn">
             Download Resume (PDF)
         </a>
         
