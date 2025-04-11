@@ -1,39 +1,279 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Dmytro Volk - Resume</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dmytro Volk - Front-End Developer Resume</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        .container { max-width: 800px; margin: 0 auto; text-align: center; }
-        a { color: #0366d6; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+      :root {
+        --primary-color: #0366d6;
+        --secondary-color: #2c3e50;
+        --text-color: #333;
+        --light-gray: #f5f5f5;
+        --border-color: #eee;
+      }
+
+      body {
+        font-family: "Helvetica", Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid var(--border-color);
+      }
+
+      h1 {
+        color: var(--secondary-color);
+        margin-bottom: 5px;
+      }
+
+      h2 {
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 5px;
+        margin-top: 25px;
+      }
+
+      .contact-info {
+        margin: 10px 0;
+      }
+
+      .links a {
+        color: var(--primary-color);
+        text-decoration: none;
+        margin: 0 5px;
+      }
+
+      .links a:hover {
+        text-decoration: underline;
+      }
+
+      .section {
+        margin-bottom: 25px;
+      }
+
+      .project {
+        margin-bottom: 20px;
+      }
+
+      .project-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .project-role {
+        font-style: italic;
+        color: #666;
+        margin-bottom: 5px;
+      }
+
+      .project-tech {
+        color: var(--primary-color);
+        margin-bottom: 10px;
+        font-size: 0.9em;
+      }
+
+      .project-links a {
+        color: var(--primary-color);
+        text-decoration: none;
+        margin-right: 15px;
+      }
+
+      .project-links a:hover {
+        text-decoration: underline;
+      }
+
+      .download-btn {
+        display: inline-block;
+        background: var(--primary-color);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 20px 0;
+      }
+
+      .download-btn:hover {
+        opacity: 0.9;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+
+      @media print {
         .download-btn {
-            display: inline-block;
-            margin: 20px 0;
-            padding: 10px 20px;
-            background-color: #0366d6;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
+          display: none;
         }
+        body {
+          font-size: 12pt;
+        }
+      }
     </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Dmytro Volk</h1>
-        <h2>Front-End Developer</h2>
-        <p>Remote | +380 97 7707021 | dima.volkkom@gmail.com</p>
-        
-        <a href="Dmytro_Volk_Resume.pdf" class="download-btn">
-            Download Resume (PDF)
-        </a>
-        
-        <p>Connect with me:</p>
+  </head>
+  <body>
+    <header>
+      <h1>Dmytro Volk</h1>
+      <h2>Front-End Developer</h2>
+      <div class="contact-info">
+        Remote | +380 97 7707021 | dima.volkkom@gmail.com
+      </div>
+      <div class="links">
+        <a href="https://github.com/Dima2430">GitHub</a>
+        <a href="https://linkedin.com/in/dmytro-volk-7305b02a0">LinkedIn</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Summary</h2>
+      <p>
+        Ambitious front-end developer with hands-on experience building
+        responsive, user-centric web applications. Skilled in HTML5, CSS3,
+        JavaScript, React, and REST APIs. Proven ability to deliver
+        production-ready code under real-world conditions. Passionate about
+        clean design, performance optimization, and pushing beyond comfort
+        zones.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Work Experience</h2>
+      <div class="project">
+        <div class="project-title">Front-End Developer</div>
+        <div class="project-role">Matching Story - Puzzle Games (Jan 2025)</div>
+        <ul>
+          <li>
+            Developed and deployed 5 production-grade sections (Hero, Header,
+            Footer, About, Benefits) using HTML, CSS, and JavaScript
+          </li>
+          <li>
+            Ensured responsiveness (desktop 1200px / mobile 320px) and
+            pixel-perfect layout based on Figma design
+          </li>
+          <li>
+            Delivered under a 7-day deadline and collaborated through GitHub
+          </li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/Dima2430/Matching-Story---Puzzle-Games"
+            >GitHub</a
+          >
+          <a href="https://dima2430.github.io/Matching-Story---Puzzle-Games/"
+            >Live</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Academic Projects</h2>
+
+      <div class="project">
+        <div class="project-title">Book Store</div>
+        <div class="project-role">Team Lead</div>
+        <div class="project-tech">HTML, CSS, JavaScript</div>
         <p>
-            <a href="https://github.com/Dima2430">GitHub</a> | 
-            <a href="https://www.linkedin.com/in/dmytro-volk-7305b02a0">LinkedIn</a>
+          Built multi-page responsive e-commerce UI with routing, data handling,
+          and animations.
         </p>
+        <div class="project-links">
+          <a href="https://github.com/Dima2430/book.store">GitHub</a>
+          <a href="https://dima2430.github.io/book.store/">Live</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Vyshyvanka Vibes</div>
+        <div class="project-role">Footer + Menu Background Developer</div>
+        <div class="project-tech">HTML, CSS</div>
+        <p>
+          Built responsive themed landing sections as part of a culturally
+          styled team site.
+        </p>
+        <div class="project-links">
+          <a
+            href="https://github.com/f0rd0101/Vyshyvanka-Vibes-Team---Unicodes-"
+            >GitHub</a
+          >
+          <a
+            href="https://f0rd0101.github.io/Vyshyvanka-Vibes-Team---Unicodes-/"
+            >Live</a
+          >
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Phonebook</div>
+        <div class="project-role">Developer</div>
+        <div class="project-tech">React, Redux, Formik, Yup</div>
+        <p>
+          Created a contact manager with Redux state, form validation, and basic
+          CRUD operations.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/Dima2430/goit-react-hw-07">GitHub</a>
+          <a href="https://goit-react-hw-07-iota-seven.vercel.app/">Live</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">AQUATRACK</div>
+        <div class="project-role">'Add Water' Popup Developer</div>
+        <div class="project-tech">React, Node.js, MongoDB, Express.js</div>
+        <p>
+          Implemented dynamic popup and contributed to backend integration in
+          team project.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/Zymbsis/project-digitall3.0-r">GitHub</a>
+          <a href="https://zymbsis.github.io/project-digitall3.0-r/">Live</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> HTML5, CSS3, JavaScript</li>
+        <li><strong>Frameworks & Libraries:</strong> React, Redux</li>
+        <li>
+          <strong>Tools & Platforms:</strong> GitHub, REST APIs, Vercel, Figma
+        </li>
+        <li>
+          <strong>Other:</strong> Responsive Design, Cross-browser Compatibility
+        </li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <p>
+        IU International University of Applied Sciences - Bachelor's in Computer
+        Science (2024 - Present)
+      </p>
+      <p>GoIT - Fullstack Developer Certificate (2023 - 2024)</p>
+    </section>
+
+    <section class="section">
+      <h2>Languages</h2>
+      <p>English (Fluent), Ukrainian (Native)</p>
+    </section>
+
+    <div style="text-align: center">
+      <a href="Dmytro_Volk_Resume.pdf" class="download-btn"
+        >Download PDF Version</a
+      >
     </div>
-</body>
+  </body>
 </html>

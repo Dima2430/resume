@@ -5,7 +5,7 @@ def sanitize(text):
     return text.replace("–", "-").replace("’", "'")
 
 class PDF(FPDF):
-    def add_clickable_links(self, github_url, live_url, h=6):
+    def add_clickable_links(self, github_url, live_url, h=2):
         self.set_font("Helvetica", size=10)
         self.set_text_color(0, 0, 255)  # Blue color for links
         
@@ -14,7 +14,7 @@ class PDF(FPDF):
         
         # Separator
         self.set_text_color(0, 0, 0)  # Black color for separator
-        self.cell(5, h, "|", align='C')
+        self.cell(5, h, "  |", align='C')
         
         # Live link
         self.set_text_color(0, 0, 255)  # Blue color for links
@@ -75,7 +75,7 @@ pdf.multi_cell(0, 8, sanitize(
     "- Matching Story - Puzzle Games (Jan 2025)\n"
     "- Developed and deployed 5 production-grade sections (Hero, Header, Footer, About, Benefits) using HTML, CSS, and JavaScript.\n"
     "- Ensured responsiveness (desktop 1200px / mobile 320px) and pixel-perfect layout based on Figma design.\n"
-    "- Delivered under a 7-day deadline and collaborated through GitHub.\n"
+    "- Delivered under a 7-day deadline and collaborated through GitHub."
 ))
 pdf.add_clickable_links(
     "https://github.com/Dima2430/Matching-Story---Puzzle-Games",
@@ -133,50 +133,3 @@ pdf_output_path = "Dmytro_Volk_Resume.pdf"
 pdf.output(pdf_output_path)
 
 print(f"PDF successfully generated at: {pdf_output_path}")
-
-# HTML Content
-html_content = f"""
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dmytro Volk - Resume</title>
-    <style>
-        body {{ font-family: Arial, sans-serif; margin: 40px; }}
-        .container {{ max-width: 800px; margin: 0 auto; text-align: center; }}
-        a {{ color: #0366d6; text-decoration: none; }}
-        a:hover {{ text-decoration: underline; }}
-        .download-btn {{
-            display: inline-block;
-            margin: 20px 0;
-            padding: 10px 20px;
-            background-color: #0366d6;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-        }}
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Dmytro Volk</h1>
-        <h2>Front-End Developer</h2>
-        <p>Remote | +380 97 7707021 | dima.volkkom@gmail.com</p>
-        
-        <a href="Dmytro_Volk_Resume.pdf" class="download-btn">
-            Download Resume (PDF)
-        </a>
-        
-        <p>Connect with me:</p>
-        <p>
-            <a href="https://github.com/Dima2430">GitHub</a> | 
-            <a href="https://www.linkedin.com/in/dmytro-volk-7305b02a0">LinkedIn</a>
-        </p>
-    </div>
-</body>
-</html>
-"""
-
-with open("index.html", "w", encoding="utf-8") as html_file:
-    html_file.write(html_content)
-
-print("HTML page generated as index.html")
