@@ -27,7 +27,7 @@ class PDF(FPDF):
 
 projects = [
     ("Book Store", "Team Lead", "HTML, CSS, JavaScript",
-     "Built multi-page responsive e-commerce UI with routing, data handling, and animations.",
+     "Led a small team to develop a responsive two-page book store UI with data handling, and animations.",
      "https://github.com/Dima2430/book.store", "https://dima2430.github.io/book.store/"),
     ("Vyshyvanka Vibes", "Footer + Menu Background Developer", "HTML, CSS",
      "Built responsive themed landing sections as part of a culturally styled team site.",
@@ -126,7 +126,7 @@ pdf.ln(5)
 pdf.set_font("Helvetica", 'B', 14)
 pdf.cell(0, 10, "Languages", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 pdf.set_font("Helvetica", '', 12)
-pdf.multi_cell(0, 8, "English (Fluent), Ukrainian (Native)")
+pdf.multi_cell(0, 8, "English (Upper-Intermediate), Ukrainian (Native)")
 
 # Save PDF
 pdf_output_path = "Dmytro_Volk_Resume.pdf"
